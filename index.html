@@ -167,10 +167,8 @@
         /* About Section */
         .about {
             padding: 6rem 0;
-            background: rgba(30, 41, 59, 0.6);
+            background: rgba(15, 23, 42, 0.5);
             backdrop-filter: blur(10px);
-border-top: 1px solid rgba(148, 163, 184, 0.1);
-border-bottom: 1px solid rgba(148, 163, 184, 0.1);
         }
 
         .about-content {
@@ -245,21 +243,19 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
         }
 
         .project-card {
-            background: rgba(51, 65, 85, 0.9);
-            border: 1px solid rgba(148, 163, 184, 0.2);
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.1);
             border-radius: 1rem;
             padding: 2rem;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-            border-color: rgba(6, 182, 212, 0.4);
-            background: rgba(51, 65, 85, 1);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            border-color: rgba(6, 182, 212, 0.3);
         }
 
         .project-card h3 {
@@ -572,7 +568,7 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
                     </div>
                 </div>
                 <div class="profile-image">
-                    <img src="./profile.jpg" alt="Janir Thorndike" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                    <img src="./img_1797.jpeg" alt="Janir Thorndike" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -620,94 +616,76 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
                 <a href="https://github.com/janirthorndike" target="_blank" title="GitHub">🔧</a>
                 <a href="https://www.linkedin.com/in/janirthorndike/" target="_blank" title="LinkedIn">💼</a>
                 <a href="https://www.instagram.com/janirthorndike" target="_blank" title="Instagram">📷</a>
-                <a href="https://mail.google.com/mail/?view=cm&to=janirthorndike@gmail.com" target="_blank" title="Email">✉️</a>
+                <a href="https://mail.google.com/mail/?view=cm&to=janirthorndike@gmail.com"  title="Email">✉️</a>
             </div>
             <p style="color: #64748b;">&copy; 2025 Janir Thorndike.</p>
         </div>
     </footer>
 
     <script>
-      <script>
-    // Sticky navigation
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        const heroHeight = document.querySelector('.hero').offsetHeight;
-        
-        if (window.scrollY > heroHeight * 0.3) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
-    });
 
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-        observer.observe(el);
-    });
-
-    // Add hover effects to project cards
-    document.querySelectorAll('.project-card').forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(-8px) scale(1)';
-        });
-    });
-
-    // Dynamic typing effect for hero subtitle
-    const subtitle = document.querySelector('.hero-subtitle');
-    const text = subtitle.textContent;
-    subtitle.textContent = '';
-    
-    setTimeout(() => {
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                subtitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
         };
-        typeWriter();
-    }, 1000);
-</script>
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add hover effects to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(-5px) scale(1)';
+            });
+        });
+
+        // Dynamic typing effect for hero subtitle
+        const subtitle = document.querySelector('.hero-subtitle');
+        const text = subtitle.textContent;
+        subtitle.textContent = '';
+        
+        setTimeout(() => {
+            let i = 0;
+            const typeWriter = () => {
+                if (i < text.length) {
+                    subtitle.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            };
+            typeWriter();
+        }, 1000);
+    </script>
 </body>
 
 </html>
-
-
-
-
-
 
 
 
