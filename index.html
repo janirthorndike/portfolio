@@ -671,16 +671,22 @@ background: rgba(51, 65, 85, 1);
 
     <script>
   // Sticky navigation
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        const heroHeight = document.querySelector('.hero').offsetHeight;
-        
-        if (window.scrollY > heroHeight * 0.3) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+ window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const heroHeight = document.querySelector('.hero').offsetHeight;
+    
+    console.log('Scroll position:', window.scrollY);
+    console.log('Hero height:', heroHeight);
+    console.log('30% of hero:', heroHeight * 0.3);
+    
+    if (window.scrollY > heroHeight * 0.3) {
+        console.log('Adding scrolled class');
+        header.classList.add('scrolled');
+    } else {
+        console.log('Removing scrolled class');
+        header.classList.remove('scrolled');
+    }
+});
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -744,6 +750,7 @@ background: rgba(51, 65, 85, 1);
 </body>
 
 </html>
+
 
 
 
