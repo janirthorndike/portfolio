@@ -748,6 +748,28 @@ background: rgba(51, 65, 85, 1);
     </footer>
 
     <script>
+       
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Your existing JavaScript continues here...
+    // Sticky navigation
+    window.addEventListener('scroll', function() {
+        // ... existing code
   // Sticky navigation
  window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -828,6 +850,7 @@ background: rgba(51, 65, 85, 1);
 </body>
 
 </html>
+
 
 
 
