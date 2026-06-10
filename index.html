@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+ 
     body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
@@ -22,15 +23,15 @@
     position: relative;
     padding-top: 120px;
 }
-
+ 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     
 }
-
-
+ 
+ 
         /* Header */
         header {
     padding: 2rem 0;
@@ -42,14 +43,14 @@
     transition: all 0.3s ease;
     background: transparent;
 }
-
+ 
 header.scrolled {
     padding: 1rem 0;
     background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(148, 163, 184, 0.1);
 } 
-
+ 
         nav {
             display: flex;
             justify-content: space-between;
@@ -61,7 +62,7 @@ header.scrolled {
             padding: 1rem 2rem;
             animation: slideDown 0.8s ease-out;
         }
-
+ 
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
@@ -70,13 +71,13 @@ header.scrolled {
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
+ 
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-
+ 
         .nav-links a {
             color: #cbd5e1;
             text-decoration: none;
@@ -84,12 +85,12 @@ header.scrolled {
             transition: all 0.3s ease;
             position: relative;
         }
-
+ 
         .nav-links a:hover {
             color: #06b6d4;
             transform: translateY(-2px);
         }
-
+ 
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -100,7 +101,7 @@ header.scrolled {
             background: linear-gradient(135deg, #06b6d4, #3b82f6);
             transition: width 0.3s ease;
         }
-
+ 
         .nav-links a:hover::after {
             width: 100%;
         }
@@ -117,7 +118,7 @@ header.scrolled {
     padding: 0;
     z-index: 10;
 }
-
+ 
 .hamburger span {
     width: 2rem;
     height: 0.25rem;
@@ -127,32 +128,32 @@ header.scrolled {
     position: relative;
     transform-origin: 1px;
 }
-
+ 
 .hamburger.active span:first-child {
     transform: rotate(45deg);
 }
-
+ 
 .hamburger.active span:nth-child(2) {
     opacity: 0;
     transform: translateX(20px);
 }
-
+ 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg);
 }
-
-
+ 
+ 
         /* Hero Section */
         .hero {
             padding: 8rem 0;
             text-align: center;
             position: relative;
         }
-
+ 
         .hero-content {
             animation: fadeInUp 1s ease-out 0.3s both;
         }
-
+ 
         .hero h1 {
             font-size: clamp(3rem, 6vw, 6rem);
             font-weight: 800;
@@ -163,7 +164,7 @@ header.scrolled {
             background-clip: text;
             line-height: 1.1;
         }
-
+ 
         .hero-subtitle {
             font-size: 1.5rem;
             color: #94a3b8;
@@ -172,7 +173,7 @@ header.scrolled {
             margin-left: auto;
             margin-right: auto;
         }
-
+ 
         .cta-buttons {
             display: flex;
             gap: 1rem;
@@ -180,7 +181,7 @@ header.scrolled {
             flex-wrap: wrap;
             margin-top: 3rem;
         }
-
+ 
         .btn {
             padding: 1rem 2rem;
             border: none;
@@ -194,29 +195,29 @@ header.scrolled {
             gap: 0.5rem;
             font-size: 1rem;
         }
-
+ 
         .btn-primary {
             background: linear-gradient(135deg, #06b6d4, #3b82f6);
             color: white;
             box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
         }
-
+ 
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 15px 40px rgba(6, 182, 212, 0.4);
         }
-
+ 
         .btn-secondary {
             background: rgba(148, 163, 184, 0.1);
             color: #e2e8f0;
             border: 1px solid rgba(148, 163, 184, 0.2);
         }
-
+ 
         .btn-secondary:hover {
             background: rgba(148, 163, 184, 0.2);
             transform: translateY(-2px);
         }
-
+ 
         /* About Section */
         .about {
             padding: 6rem 0;
@@ -225,14 +226,14 @@ border-top: 1px solid rgba(148, 163, 184, 0.1);
 border-bottom: 1px solid rgba(148, 163, 184, 0.1);
             backdrop-filter: blur(10px);
         }
-
+ 
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
-
+ 
         .about-text h2 {
             font-size: 2.5rem;
             font-weight: 700;
@@ -242,13 +243,13 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
+ 
         .about-text p {
             font-size: 1.1rem;
             color: #94a3b8;
             margin-bottom: 1.5rem;
         }
-
+ 
         .profile-image {
             width: 300px;
             height: 300px;
@@ -261,7 +262,7 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
             justify-content: center;
             box-shadow: 0 20px 50px rgba(6, 182, 212, 0.3);
         }
-
+ 
         .profile-image img {
             width: 100%;
             height: 100%;
@@ -274,12 +275,12 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
             color: #94a3b8;
             font-size: 3rem;
         }
-
+ 
         /* Projects Section */
         .projects {
             padding: 6rem 0;
         }
-
+ 
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -290,13 +291,13 @@ border-bottom: 1px solid rgba(148, 163, 184, 0.1);
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
+ 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
-
+ 
         .project-card {
            background: rgba(51, 65, 85, 0.9);
 border: 1px solid rgba(148, 163, 184, 0.2);
@@ -307,42 +308,42 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             cursor: pointer;
         }
-
+ 
         .project-card:hover {
            transform: translateY(-8px);
 box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
 border-color: rgba(6, 182, 212, 0.4);
 background: rgba(51, 65, 85, 1);
         }
-
+ 
         .project-card h3 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
             color: #ffffff;
         }
-
+ 
         .project-card p {
             color: #94a3b8;
             margin-bottom: 1.5rem;
         }
-
+ 
         .project-links {
             display: flex;
             gap: 1rem;
         }
-
+ 
         .project-links a {
             color: #06b6d4;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
-
+ 
         .project-links a:hover {
             color: #3b82f6;
         }
-
+ 
         /* Footer */
         footer {
             background: rgba(15, 23, 42, 0.9);
@@ -350,14 +351,14 @@ background: rgba(51, 65, 85, 1);
             text-align: center;
             border-top: 1px solid rgba(148, 163, 184, 0.1);
         }
-
+ 
         .social-links {
             display: flex;
             justify-content: center;
             gap: 2rem;
             margin-bottom: 2rem;
         }
-
+ 
         .social-links a {
             width: 50px;
             height: 50px;
@@ -370,13 +371,13 @@ background: rgba(51, 65, 85, 1);
             text-decoration: none;
             transition: all 0.3s ease;
         }
-
+ 
         .social-links a:hover {
             background: linear-gradient(135deg, #06b6d4, #3b82f6);
             color: white;
             transform: translateY(-3px);
         }
-
+ 
         /* Animations */
         @keyframes slideDown {
             from {
@@ -388,7 +389,7 @@ background: rgba(51, 65, 85, 1);
                 transform: translateY(0);
             }
         }
-
+ 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -399,18 +400,18 @@ background: rgba(51, 65, 85, 1);
                 transform: translateY(0);
             }
         }
-
+ 
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease;
         }
-
+ 
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
+ 
         /* Responsive Design */
     @media (max-width: 768px) {
     .hamburger {
@@ -456,8 +457,8 @@ background: rgba(51, 65, 85, 1);
         grid-template-columns: 1fr;
     }
 }
-
-
+ 
+ 
         /* Background Animation */
         body::before {
             content: '';
@@ -473,7 +474,7 @@ background: rgba(51, 65, 85, 1);
             z-index: -2;
             animation: backgroundPulse 8s ease-in-out infinite;
         }
-
+ 
         body::after {
             content: '';
             position: fixed;
@@ -486,7 +487,7 @@ background: rgba(51, 65, 85, 1);
             opacity: 0.3;
             animation: drift 15s linear infinite;
         }
-
+ 
         @keyframes backgroundPulse {
             0%, 100% { 
                 opacity: 1;
@@ -497,7 +498,7 @@ background: rgba(51, 65, 85, 1);
                 transform: scale(1.05);
             }
         }
-
+ 
         @keyframes drift {
             0% { transform: translateX(0) translateY(0); }
             25% { transform: translateX(-10px) translateY(-20px); }
@@ -505,7 +506,7 @@ background: rgba(51, 65, 85, 1);
             75% { transform: translateX(-5px) translateY(-30px); }
             100% { transform: translateX(0) translateY(0); }
         }
-
+ 
         /* Additional floating elements */
         .floating-elements {
             position: fixed;
@@ -517,7 +518,7 @@ background: rgba(51, 65, 85, 1);
             z-index: -1;
             overflow: hidden;
         }
-
+ 
         .floating-element {
             position: absolute;
             width: 4px;
@@ -527,7 +528,7 @@ background: rgba(51, 65, 85, 1);
             animation: float-up 20s linear infinite;
             opacity: 0;
         }
-
+ 
         .floating-element:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 15s; }
         .floating-element:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 18s; }
         .floating-element:nth-child(3) { left: 30%; animation-delay: 4s; animation-duration: 22s; }
@@ -537,7 +538,7 @@ background: rgba(51, 65, 85, 1);
         .floating-element:nth-child(7) { left: 70%; animation-delay: 12s; animation-duration: 19s; }
         .floating-element:nth-child(8) { left: 80%; animation-delay: 14s; animation-duration: 17s; }
         .floating-element:nth-child(9) { left: 90%; animation-delay: 16s; animation-duration: 21s; }
-
+ 
         @keyframes float-up {
             0% {
                 transform: translateY(100vh) rotate(0deg);
@@ -554,7 +555,7 @@ background: rgba(51, 65, 85, 1);
                 opacity: 0;
             }
         }
-
+ 
         /* Mesh gradient overlay */
         .mesh-gradient {
             position: fixed;
@@ -570,7 +571,7 @@ background: rgba(51, 65, 85, 1);
             z-index: -3;
             animation: meshRotate 30s linear infinite;
         }
-
+ 
         @keyframes meshRotate {
             0% { transform: rotate(0deg) scale(1); }
             25% { transform: rotate(90deg) scale(1.1); }
@@ -578,7 +579,7 @@ background: rgba(51, 65, 85, 1);
             75% { transform: rotate(270deg) scale(1.1); }
             100% { transform: rotate(360deg) scale(1); }
         }
-
+ 
     </style>
 </head>
 <body>
@@ -595,7 +596,7 @@ background: rgba(51, 65, 85, 1);
         <div class="floating-element"></div>
         <div class="floating-element"></div>
     </div>
-
+ 
     <!-- Header -->
     <header>
         <div class="container">
@@ -619,7 +620,7 @@ background: rgba(51, 65, 85, 1);
 </nav>
         </div>
     </header>
-
+ 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
@@ -632,12 +633,12 @@ background: rgba(51, 65, 85, 1);
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="#resume" class="btn btn-secondary">Download Resume</a>
+                    <a href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J/export?format=pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <!-- About Section -->
     <section class="about fade-in" id="about">
         <div class="container">
@@ -645,10 +646,10 @@ background: rgba(51, 65, 85, 1);
                 <div class="about-text">
                     <h2>About Me</h2>
                     <p>
-                       I’m a hybrid strategist-operator with over a decade of experience delivering high-impact digital platforms, marketing automation systems, and customer success programs across enterprise and startup environments. I build cross-functional alignment, simplify complexity, and lead with authenticity. I have deep experience managing complex technical integrations, client-facing teams, and product-driven communication strategies in martech, e-commerce, and retail environments.
+                       I'm a hybrid strategist-operator with 15+ years in B2B SaaS. I now run Maximo LLC, building AI advisory practices for non-tech mid-size companies. I'm strongest at diagnostic work, strategy synthesis, and translating complex technical possibilities into business value. I ship working prototypes—not just decks.
                     </p>
                     <p>
-                        I also like to build things in both physical and digital spaces.
+                        I prefer strategic and advisory work over operational execution. I build things in both digital spaces and the physical world.
                     </p>
                     <div class="skills" style="margin-top: 2rem;">
                         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -656,7 +657,7 @@ background: rgba(51, 65, 85, 1);
                             <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Client Success</span>
                             <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Automation</span>
                             <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Web</span>
-                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">CRM</span>
+                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">AI Integration</span>
                         </div>
                     </div>
                 </div>
@@ -666,49 +667,69 @@ background: rgba(51, 65, 85, 1);
             </div>
         </div>
     </section>
-
+ 
    <!-- Projects Section -->
 <section class="projects fade-in" id="projects">
     <div class="container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Center Connect</h3>
-                <p>A vibe code built web application that provides all-in-one platform for seamless communication and operations management between shopping center tenants and property management.</p>
+                <h3>DoorBot</h3>
+                <p>Live AI lead-generation chatbot deployed on Ski Town Garage Doors. Built with Claude API, Val.town serverless functions, and Web3Forms. Supports multi-turn conversations, photo attachments via Claude Vision, and delivers structured lead emails to business inbox.</p>
                 <div class="project-links">
-                    <a href="https://app--center-connect-ba2f5e1c.base44.app/login?from_url=https://app--center-connect-ba2f5e1c.base44.app/&app_id=6881513a8df6877cba2f5e1c" target="_blank">Live Demo</a>
-                    <a href="https://github.com/janirthorndike/portfolio" target="_blank">GitHub</a>
+                    <a href="https://skitowngaragedoors.com/" target="_blank">Live Site</a>
+                    <a href="https://val.town/" target="_blank">Built With</a>
+                </div>
+            </div>
+ 
+            <div class="project-card">
+                <h3>CrapApp</h3>
+                <p>Humor-driven bathroom utility web app. Features include CrapMap (location finder), Flush & Tell (social posts with Supabase backend), Daily Dump Trivia, Code Brown Simulator, customizable poop avatar system with 20+ SVG variants, and integrated Crap Store with Amazon Associates products.</p>
+                <div class="project-links">
+                    <a href="https://crapapp.netlify.app/" target="_blank">Live App</a>
+                    <a href="https://www.instagram.com/thecrapapp" target="_blank">Instagram</a>
                 </div>
             </div>
             
             <div class="project-card">
                 <h3>Ski Town Garage Doors</h3>
-                <p>AI built service business website</p>
+                <p>Full-service business website featuring AI-powered content, optimized Google Business Profile management, and integrated DoorBot lead-gen chatbot. Portfolio piece showcasing AI integration in local service businesses.</p>
                 <div class="project-links">
                     <a href="https://skitowngaragedoors.com/" target="_blank">Website</a>
-                    <a href="https://share.google/Q4MezDs36ovZCBscM" target="_blank">Optimized GBP</a>
+                    <a href="https://share.google/Q4MezDs36ovZCBscM" target="_blank">Google Profile</a>
+                </div>
+            </div>
+ 
+            <div class="project-card">
+                <h3>Center Connect</h3>
+                <p>Fullstack web application for shopping center operations. Enables seamless communication and content management between tenants and property management. Built with modern web technologies and database integration.</p>
+                <div class="project-links">
+                    <a href="https://app--center-connect-ba2f5e1c.base44.app/login?from_url=https://app--center-connect-ba2f5e1c.base44.app/&app_id=6881513a8df6877cba2f5e1c" target="_blank">Demo</a>
+                    <a href="https://github.com/janirthorndike/portfolio" target="_blank">GitHub</a>
                 </div>
             </div>
             
             <div class="project-card">
                 <h3>Resume</h3>
-                <p><a href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J" class="btn btn-secondary" target="_blank">Download Resume</a></p>
+                <p>15+ years of B2B SaaS experience. Director-level expertise in customer success, AI integration, and strategic consulting. Available for consulting engagements and advisory roles.</p>
                 <div class="project-links">
+                    <a href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J" target="_blank">Download</a>
                     <a href="https://www.linkedin.com/in/janirthorndike/" target="_blank">LinkedIn</a>
                 </div>
             </div>
-
+ 
             <div class="project-card">
                 <h3>CONTACT</h3>
-                <p>Mobile: <a href="tel:+13035176565" style="color: #06b6d4; text-decoration: none;">303-517-6565</a></p>
+                <p>Open to consulting, advisory work, and strategic engagements. Let's discuss how AI can transform your business.</p>
                 <div class="project-links">
-                    <a href="https://mail.google.com/mail/?view=cm&to=janirthorndike@gmail.com">janirthorndike@gmail.com</a>
+                    <a href="tel:+13035176565">303-517-6565</a>
+                    <a href="mailto:janirthorndike@gmail.com">Email</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+ 
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
@@ -721,18 +742,18 @@ background: rgba(51, 65, 85, 1);
             <p style="color: #64748b;">&copy; 2025 Janir Thorndike.</p>
         </div>
     </footer>
-
+ 
     <script>
        
     // Hamburger menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-
+ 
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
-
+ 
     // Close menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function() {
@@ -740,7 +761,7 @@ background: rgba(51, 65, 85, 1);
             navLinks.classList.remove('active');
         });
     });
-
+ 
     
   // Sticky navigation
  window.addEventListener('scroll', function() {
@@ -772,13 +793,13 @@ background: rgba(51, 65, 85, 1);
                 }
             });
         });
-
+ 
         // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
         };
-
+ 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -786,11 +807,11 @@ background: rgba(51, 65, 85, 1);
                 }
             });
         }, observerOptions);
-
+ 
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
-
+ 
         // Add hover effects to project cards
         document.querySelectorAll('.project-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -801,7 +822,7 @@ background: rgba(51, 65, 85, 1);
                 this.style.transform = 'translateY(-5px) scale(1)';
             });
         });
-
+ 
         // Dynamic typing effect for hero subtitle
         const subtitle = document.querySelector('.hero-subtitle');
         const text = subtitle.textContent;
@@ -820,46 +841,6 @@ background: rgba(51, 65, 85, 1);
         }, 1000);
     </script>
 </body>
-
+ 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
