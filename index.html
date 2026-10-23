@@ -1,847 +1,604 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janir Thorndike - Projects</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
- 
-    body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
-    color: #e2e8f0;
-    background: #0f172a;
-    min-height: 100vh;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janir Thorndike | Client Services Leader &amp; AI Builder</title>
+<meta name="description" content="Janir Thorndike is a client services and account management leader with 15+ years in B2B SaaS. He builds AI tools, websites, and local search presence for service businesses, including La Crosse Garage Doors and Ski Town Garage Doors.">
+<link rel="canonical" href="https://janirthorndike.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Janir Thorndike | Client Services Leader & AI Builder">
+<meta property="og:description" content="15+ years leading client services in B2B SaaS. Builder of DoorBot and two local service business websites.">
+<meta property="og:url" content="https://janirthorndike.netlify.app/">
+<meta property="og:image" content="https://janirthorndike.netlify.app/profile.jpg">
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Janir Thorndike",
+  "alternateName": "Tripp Thorndike",
+  "jobTitle": "Client Services & Account Management Leader",
+  "url": "https://janirthorndike.netlify.app/",
+  "image": "https://janirthorndike.netlify.app/profile.jpg",
+  "email": "mailto:janirthorndike@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "La Crosse", "addressRegion": "WI", "addressCountry": "US"},
+  "knowsLanguage": ["English", "Spanish"],
+  "knowsAbout": ["Customer success", "Account management", "Client services leadership", "AI integration", "Local SEO", "Generative engine optimization", "Lead generation chatbots"],
+  "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Full Sail University"}, {"@type": "CollegeOrUniversity", "name": "University of Colorado"}],
+  "founder": [
+    {"@type": "LocalBusiness", "name": "La Crosse Garage Doors", "url": "https://lacrossegaragedoors.com/"},
+    {"@type": "LocalBusiness", "name": "Ski Town Garage Doors", "url": "https://skitowngaragedoors.com/"}
+  ],
+  "sameAs": ["https://www.linkedin.com/in/janirthorndike/", "https://github.com/janirthorndike"]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #0a0f1c;
+    --bg-2: #0f1626;
+    --surface: #141c2f;
+    --surface-2: #1a2440;
+    --line: rgba(148, 163, 184, 0.14);
+    --line-strong: rgba(148, 163, 184, 0.26);
+    --text: #e8edf6;
+    --muted: #97a3ba;
+    --dim: #6b7790;
+    --accent: #22c3e6;
+    --accent-ink: #061420;
+    --warm: #f5a54a;
+    --radius: 14px;
+    --max: 1120px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    position: relative;
-    padding-top: 120px;
-}
- 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    
-}
- 
- 
-        /* Header */
-        header {
-    padding: 2rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    transition: all 0.3s ease;
-    background: transparent;
-}
- 
-header.scrolled {
-    padding: 1rem 0;
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
-} 
- 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            backdrop-filter: blur(10px);
-            background: rgba(15, 23, 42, 0.3);
-            border: 1px solid rgba(148, 163, 184, 0.1);
-            border-radius: 2rem;
-            padding: 1rem 2rem;
-            animation: slideDown 0.8s ease-out;
-        }
- 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #06b6d4, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
- 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
- 
-        .nav-links a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
- 
-        .nav-links a:hover {
-            color: #06b6d4;
-            transform: translateY(-2px);
-        }
- 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(135deg, #06b6d4, #3b82f6);
-            transition: width 0.3s ease;
-        }
- 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-}
- 
-.hamburger span {
-    width: 2rem;
-    height: 0.25rem;
-    background: #e2e8f0;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-}
- 
-.hamburger.active span:first-child {
-    transform: rotate(45deg);
-}
- 
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-    transform: translateX(20px);
-}
- 
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg);
-}
- 
- 
-        /* Hero Section */
-        .hero {
-            padding: 8rem 0;
-            text-align: center;
-            position: relative;
-        }
- 
-        .hero-content {
-            animation: fadeInUp 1s ease-out 0.3s both;
-        }
- 
-        .hero h1 {
-            font-size: clamp(3rem, 6vw, 6rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff, #06b6d4, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.1;
-        }
- 
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
- 
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 3rem;
-        }
- 
-        .btn {
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-        }
- 
-        .btn-primary {
-            background: linear-gradient(135deg, #06b6d4, #3b82f6);
-            color: white;
-            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
-        }
- 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(6, 182, 212, 0.4);
-        }
- 
-        .btn-secondary {
-            background: rgba(148, 163, 184, 0.1);
-            color: #e2e8f0;
-            border: 1px solid rgba(148, 163, 184, 0.2);
-        }
- 
-        .btn-secondary:hover {
-            background: rgba(148, 163, 184, 0.2);
-            transform: translateY(-2px);
-        }
- 
-        /* About Section */
-        .about {
-            padding: 6rem 0;
-            background: rgba(30, 41, 59, 0.6);
-border-top: 1px solid rgba(148, 163, 184, 0.1);
-border-bottom: 1px solid rgba(148, 163, 184, 0.1);
-            backdrop-filter: blur(10px);
-        }
- 
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
- 
-        .about-text h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
- 
-        .about-text p {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            margin-bottom: 1.5rem;
-        }
- 
-        .profile-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #06b6d4, #3b82f6);
-            padding: 4px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.3);
-        }
- 
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            background: #1e293b;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #94a3b8;
-            font-size: 3rem;
-        }
- 
-        /* Projects Section */
-        .projects {
-            padding: 6rem 0;
-        }
- 
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 3rem;
-            background: linear-gradient(135deg, #ffffff, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
- 
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
- 
-        .project-card {
-           background: rgba(51, 65, 85, 0.9);
-border: 1px solid rgba(148, 163, 184, 0.2);
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 1rem;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-            cursor: pointer;
-        }
- 
-        .project-card:hover {
-           transform: translateY(-8px);
-box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-border-color: rgba(6, 182, 212, 0.4);
-background: rgba(51, 65, 85, 1);
-        }
- 
-        .project-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
- 
-        .project-card p {
-            color: #94a3b8;
-            margin-bottom: 1.5rem;
-        }
- 
-        .project-links {
-            display: flex;
-            gap: 1rem;
-        }
- 
-        .project-links a {
-            color: #06b6d4;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
- 
-        .project-links a:hover {
-            color: #3b82f6;
-        }
- 
-        /* Footer */
-        footer {
-            background: rgba(15, 23, 42, 0.9);
-            padding: 3rem 0;
-            text-align: center;
-            border-top: 1px solid rgba(148, 163, 184, 0.1);
-        }
- 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
- 
-        .social-links a {
-            width: 50px;
-            height: 50px;
-            background: rgba(148, 163, 184, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #94a3b8;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
- 
-        .social-links a:hover {
-            background: linear-gradient(135deg, #06b6d4, #3b82f6);
-            color: white;
-            transform: translateY(-3px);
-        }
- 
-        /* Animations */
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
- 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
- 
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
- 
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
- 
-        /* Responsive Design */
-    @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    
+  }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, .display { font-family: 'Space Grotesk', 'Inter', sans-serif; letter-spacing: -0.02em; line-height: 1.12; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  section { padding: 110px 0; }
+  .eyebrow {
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 14px; display: inline-block;
+  }
+  .section-head { max-width: 680px; margin-bottom: 52px; }
+  .section-head h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 14px; }
+  .section-head p { color: var(--muted); }
+
+  /* Nav */
+  .nav {
+    position: fixed; inset: 0 0 auto 0; z-index: 50;
+    background: rgba(10, 15, 28, 0.72);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .25s;
+  }
+  .nav.scrolled { border-color: var(--line); }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; }
+  .brand-mark {
+    width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--accent), #3b82f6); color: var(--accent-ink); font-size: .9rem; font-weight: 700;
+  }
+  .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--muted); font-size: .93rem; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links .nav-cta { color: var(--text); border: 1px solid var(--line-strong); padding: 8px 16px; border-radius: 999px; }
+  .nav-links .nav-cta:hover { border-color: var(--accent); color: var(--accent); }
+  .menu-btn { display: none; background: none; border: 0; color: var(--text); cursor: pointer; padding: 8px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+    font-weight: 600; font-size: .96rem; padding: 13px 22px; border-radius: 999px;
+    transition: transform .2s, background .2s, border-color .2s, color .2s;
+  }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { transform: translateY(-2px); background: #4dd3f0; }
+  .btn-ghost { border: 1px solid var(--line-strong); color: var(--text); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .btn svg { width: 16px; height: 16px; }
+
+  /* Hero */
+  .hero {
+    padding: 160px 0 90px;
+    background:
+      radial-gradient(900px 500px at 85% 10%, rgba(34, 195, 230, 0.12), transparent 60%),
+      radial-gradient(700px 400px at 0% 90%, rgba(245, 165, 74, 0.07), transparent 60%);
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: center; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px 18px; color: var(--muted); font-size: .9rem; margin-bottom: 26px; }
+  .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 4px rgba(52, 211, 153, .15); }
+  .hero h1 { font-size: clamp(2.5rem, 5.6vw, 4.2rem); margin-bottom: 24px; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero .lede { font-size: 1.15rem; color: var(--muted); max-width: 580px; margin-bottom: 36px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .portrait { position: relative; justify-self: center; width: min(100%, 380px); }
+  .portrait img {
+    width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%;
+    border-radius: 22px; border: 1px solid var(--line-strong);
+  }
+  .portrait-tag {
+    position: absolute; left: -22px; bottom: 28px;
+    background: var(--surface); border: 1px solid var(--line-strong); border-radius: 12px;
+    padding: 12px 16px; font-size: .85rem; box-shadow: 0 20px 40px rgba(0,0,0,.35);
+  }
+  .portrait-tag strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; }
+  .portrait-tag span { color: var(--muted); }
+
+  /* Stats */
+  .stats { padding: 0 0 20px; }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2);
+  }
+  .stat { padding: 28px 26px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat .num { font-family: 'Space Grotesk', sans-serif; font-size: 2.3rem; font-weight: 700; color: var(--text); line-height: 1; margin-bottom: 10px; }
+  .stat .num small { font-size: 1.2rem; color: var(--accent); }
+  .stat p { color: var(--muted); font-size: .9rem; line-height: 1.5; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+  .about-grid h2 { font-size: clamp(2rem, 4vw, 2.75rem); }
+  .about-copy p { color: var(--muted); margin-bottom: 18px; }
+  .about-copy p strong { color: var(--text); font-weight: 600; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+  .chip { font-size: .82rem; color: var(--text); background: var(--surface); border: 1px solid var(--line); padding: 6px 13px; border-radius: 999px; }
+
+  /* Work */
+  #work { background: rgba(15, 22, 38, 0.55); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .feature {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 20px; margin-bottom: 24px;
+  }
+  .feature-img { position: relative; min-height: 340px; background: #1b2235; }
+  .feature-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .feature-img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 60%, var(--surface)); }
+  .feature-body { padding: 44px 44px 40px; }
+  .badge {
+    display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--warm); background: rgba(245, 165, 74, .12); padding: 5px 10px; border-radius: 6px; margin-bottom: 16px;
+  }
+  .badge.cool { color: var(--accent); background: rgba(34, 195, 230, .12); }
+  .feature-body h3 { font-size: 1.85rem; margin-bottom: 14px; }
+  .feature-body > p { color: var(--muted); margin-bottom: 20px; }
+  .ticks { list-style: none; margin-bottom: 28px; }
+  .ticks li { position: relative; padding-left: 24px; color: var(--muted); font-size: .95rem; margin-bottom: 8px; }
+  .ticks li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 8px; height: 8px; border-radius: 2px; background: var(--accent); }
+  .links { display: flex; flex-wrap: wrap; gap: 18px; }
+  .links a { text-decoration: none; color: var(--accent); font-weight: 600; font-size: .93rem; display: inline-flex; align-items: center; gap: 6px; }
+  .links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 32px 30px; display: flex; flex-direction: column; transition: border-color .25s, transform .25s;
+  }
+  .card:hover { border-color: var(--line-strong); transform: translateY(-3px); }
+  .card h3 { font-size: 1.35rem; margin-bottom: 12px; }
+  .card p { color: var(--muted); font-size: .95rem; margin-bottom: 18px; }
+  .card .result {
+    margin-top: auto; margin-bottom: 20px; padding: 14px 16px; border-radius: 10px;
+    background: var(--bg-2); border: 1px solid var(--line); font-size: .9rem; color: var(--text);
+  }
+  .card .result b { color: var(--accent); font-family: 'Space Grotesk', sans-serif; }
+  .stack { font-size: .8rem; color: var(--dim); margin-bottom: 18px; }
+
+  /* Experience */
+  .timeline { border-top: 1px solid var(--line); }
+  .role { display: grid; grid-template-columns: 220px 1fr; gap: 32px; padding: 30px 0; border-bottom: 1px solid var(--line); }
+  .role-when { color: var(--dim); font-size: .9rem; padding-top: 4px; }
+  .role h3 { font-size: 1.2rem; margin-bottom: 4px; }
+  .role .org { color: var(--accent); font-size: .93rem; font-weight: 500; margin-bottom: 10px; }
+  .role p { color: var(--muted); font-size: .95rem; max-width: 720px; }
+
+  /* Contact */
+  .contact-box {
+    border: 1px solid var(--line-strong); border-radius: 24px; padding: 64px;
+    background:
+      radial-gradient(600px 300px at 100% 0%, rgba(34, 195, 230, 0.14), transparent 60%),
+      var(--surface);
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center;
+  }
+  .contact-box h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 14px; }
+  .contact-box p { color: var(--muted); }
+  .contact-list { list-style: none; display: grid; gap: 12px; }
+  .contact-list a {
+    display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 14px 18px;
+    border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); transition: border-color .2s;
+  }
+  .contact-list a:hover { border-color: var(--accent); }
+  .contact-list svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; }
+  .contact-list small { display: block; color: var(--dim); font-size: .78rem; }
+
+  footer { padding: 40px 0 50px; color: var(--dim); font-size: .88rem; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { text-decoration: none; color: var(--muted); margin-left: 20px; }
+  footer a:hover { color: var(--accent); }
+
+
+  /* Background effects (carried over from the original site) */
+  html { background: var(--bg); }
+  body { background: transparent; }
+  .bg-glow, .bg-mesh, .bg-grain, .bg-dots { position: fixed; pointer-events: none; z-index: -1; }
+  .bg-glow {
+    inset: 0;
+    background:
+      radial-gradient(circle at 10% 20%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    animation: bgPulse 8s ease-in-out infinite;
+  }
+  .bg-mesh {
+    inset: -25%;
+    background:
+      linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+      linear-gradient(225deg, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+      linear-gradient(315deg, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+    animation: meshRotate 30s linear infinite;
+  }
+  .bg-grain {
+    inset: 0; opacity: .3;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3cdefs%3e%3cpattern id='g' width='100' height='100' patternUnits='userSpaceOnUse'%3e%3ccircle cx='10' cy='10' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3ccircle cx='30' cy='25' r='0.5' fill='%233b82f6' opacity='0.08'/%3e%3ccircle cx='50' cy='45' r='0.5' fill='%238b5cf6' opacity='0.06'/%3e%3ccircle cx='70' cy='15' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3ccircle cx='20' cy='60' r='0.5' fill='%233b82f6' opacity='0.08'/%3e%3ccircle cx='80' cy='80' r='0.5' fill='%238b5cf6' opacity='0.06'/%3e%3ccircle cx='40' cy='85' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3ccircle cx='90' cy='30' r='0.5' fill='%233b82f6' opacity='0.08'/%3e%3ccircle cx='15' cy='75' r='0.5' fill='%238b5cf6' opacity='0.06'/%3e%3ccircle cx='60' cy='20' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23g)'/%3e%3c/svg%3e");
+    animation: drift 15s linear infinite;
+  }
+  .bg-dots { inset: 0; overflow: hidden; }
+  .bg-dots span {
+    position: absolute; bottom: 0; width: 4px; height: 4px; border-radius: 50%; opacity: 0;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6);
+    animation: floatUp 20s linear infinite;
+  }
+  .bg-dots span:nth-child(1) { left: 10%; animation-delay: 0s;  animation-duration: 15s; }
+  .bg-dots span:nth-child(2) { left: 20%; animation-delay: 2s;  animation-duration: 18s; width: 5px; height: 5px; }
+  .bg-dots span:nth-child(3) { left: 30%; animation-delay: 4s;  animation-duration: 22s; }
+  .bg-dots span:nth-child(4) { left: 40%; animation-delay: 6s;  animation-duration: 16s; width: 3px; height: 3px; }
+  .bg-dots span:nth-child(5) { left: 50%; animation-delay: 8s;  animation-duration: 20s; }
+  .bg-dots span:nth-child(6) { left: 60%; animation-delay: 10s; animation-duration: 14s; width: 5px; height: 5px; }
+  .bg-dots span:nth-child(7) { left: 70%; animation-delay: 12s; animation-duration: 19s; }
+  .bg-dots span:nth-child(8) { left: 80%; animation-delay: 14s; animation-duration: 17s; width: 3px; height: 3px; }
+  .bg-dots span:nth-child(9) { left: 90%; animation-delay: 16s; animation-duration: 21s; }
+  @keyframes bgPulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .8; transform: scale(1.05); } }
+  @keyframes drift {
+    0% { transform: translate(0, 0); } 25% { transform: translate(-10px, -20px); }
+    50% { transform: translate(10px, -10px); } 75% { transform: translate(-5px, -30px); } 100% { transform: translate(0, 0); }
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10%, 90% { opacity: 1; }
+    100% { transform: translateY(calc(-100vh - 100px)) rotate(360deg); opacity: 0; }
+  }
+  @keyframes meshRotate {
+    0% { transform: rotate(0deg) scale(1); } 25% { transform: rotate(90deg) scale(1.1); }
+    50% { transform: rotate(180deg) scale(1); } 75% { transform: rotate(270deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bg-glow, .bg-mesh, .bg-grain { animation: none; }
+    .bg-dots { display: none; }
+  }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Responsive */
+  @media (max-width: 960px) {
+    .hero-grid, .about-grid, .feature, .contact-box { grid-template-columns: 1fr; }
+    .hero-grid { gap: 48px; }
+    .portrait { order: -1; width: min(100%, 300px); justify-self: start; }
+    .portrait-tag { left: auto; right: -12px; }
+    .feature-img { min-height: 240px; }
+    .feature-img::after { background: linear-gradient(180deg, transparent 60%, var(--surface)); }
+    .cards { grid-template-columns: 1fr 1fr; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .stat:nth-child(2) { border-right: 0; }
+    .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .contact-box { padding: 44px 32px; }
+  }
+  @media (max-width: 720px) {
+    section { padding: 80px 0; }
+    .wrap { padding: 0 16px; }
+    .hero { padding: 120px 0 70px; }
+    .menu-btn { display: block; }
     .nav-links {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        background: rgba(15, 23, 42, 0.98);
-        backdrop-filter: blur(20px);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-        transition: left 0.3s ease;
-        z-index: 5;
+      display: none; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; gap: 0;
+      background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 16px 16px;
     }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .nav-links a {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
- 
- 
-        /* Background Animation */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 10% 20%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
-            z-index: -2;
-            animation: backgroundPulse 8s ease-in-out infinite;
-        }
- 
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3cdefs%3e%3cpattern id='grain' width='100' height='100' patternUnits='userSpaceOnUse'%3e%3ccircle cx='10' cy='10' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3ccircle cx='30' cy='25' r='0.5' fill='%233b82f6' opacity='0.08'/%3e%3ccircle cx='50' cy='45' r='0.5' fill='%238b5cf6' opacity='0.06'/%3e%3ccircle cx='70' cy='15' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3ccircle cx='20' cy='60' r='0.5' fill='%233b82f6' opacity='0.08'/%3e%3ccircle cx='80' cy='80' r='0.5' fill='%238b5cf6' opacity='0.06'/%3e%3ccircle cx='40' cy='85' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3ccircle cx='90' cy='30' r='0.5' fill='%233b82f6' opacity='0.08'/%3e%3ccircle cx='15' cy='75' r='0.5' fill='%238b5cf6' opacity='0.06'/%3e%3ccircle cx='60' cy='20' r='0.5' fill='%2306b6d4' opacity='0.1'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23grain)'/%3e%3c/svg%3e");
-            z-index: -1;
-            opacity: 0.3;
-            animation: drift 15s linear infinite;
-        }
- 
-        @keyframes backgroundPulse {
-            0%, 100% { 
-                opacity: 1;
-                transform: scale(1);
-            }
-            50% { 
-                opacity: 0.8;
-                transform: scale(1.05);
-            }
-        }
- 
-        @keyframes drift {
-            0% { transform: translateX(0) translateY(0); }
-            25% { transform: translateX(-10px) translateY(-20px); }
-            50% { transform: translateX(10px) translateY(-10px); }
-            75% { transform: translateX(-5px) translateY(-30px); }
-            100% { transform: translateX(0) translateY(0); }
-        }
- 
-        /* Additional floating elements */
-        .floating-elements {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            overflow: hidden;
-        }
- 
-        .floating-element {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: linear-gradient(45deg, #06b6d4, #3b82f6);
-            border-radius: 50%;
-            animation: float-up 20s linear infinite;
-            opacity: 0;
-        }
- 
-        .floating-element:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 15s; }
-        .floating-element:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 18s; }
-        .floating-element:nth-child(3) { left: 30%; animation-delay: 4s; animation-duration: 22s; }
-        .floating-element:nth-child(4) { left: 40%; animation-delay: 6s; animation-duration: 16s; }
-        .floating-element:nth-child(5) { left: 50%; animation-delay: 8s; animation-duration: 20s; }
-        .floating-element:nth-child(6) { left: 60%; animation-delay: 10s; animation-duration: 14s; }
-        .floating-element:nth-child(7) { left: 70%; animation-delay: 12s; animation-duration: 19s; }
-        .floating-element:nth-child(8) { left: 80%; animation-delay: 14s; animation-duration: 17s; }
-        .floating-element:nth-child(9) { left: 90%; animation-delay: 16s; animation-duration: 21s; }
- 
-        @keyframes float-up {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) rotate(360deg);
-                opacity: 0;
-            }
-        }
- 
-        /* Mesh gradient overlay */
-        .mesh-gradient {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                linear-gradient(135deg, rgba(6, 182, 212, 0.03) 0%, transparent 50%),
-                linear-gradient(225deg, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-                linear-gradient(45deg, rgba(139, 92, 246, 0.02) 0%, transparent 50%),
-                linear-gradient(315deg, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
-            z-index: -3;
-            animation: meshRotate 30s linear infinite;
-        }
- 
-        @keyframes meshRotate {
-            0% { transform: rotate(0deg) scale(1); }
-            25% { transform: rotate(90deg) scale(1.1); }
-            50% { transform: rotate(180deg) scale(1); }
-            75% { transform: rotate(270deg) scale(1.1); }
-            100% { transform: rotate(360deg) scale(1); }
-        }
- 
-    </style>
+    .nav-links.open { display: flex; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 12px 0; }
+    .nav-links .nav-cta { display: inline-block; margin-top: 8px; }
+    .cards { grid-template-columns: 1fr; }
+    .feature-body { padding: 30px 24px; }
+    .role { grid-template-columns: 1fr; gap: 6px; }
+    .contact-box { padding: 36px 22px; }
+    footer a { margin: 0 20px 0 0; }
+  }
+  @media (max-width: 420px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat { border-right: 0 !important; border-bottom: 1px solid var(--line); }
+    .stat:last-child { border-bottom: 0; }
+  }
+</style>
 </head>
 <body>
-    <!-- Background Elements -->
-    <div class="mesh-gradient"></div>
-    <div class="floating-elements">
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-    </div>
- 
-    <!-- Header -->
-    <header>
-        <div class="container">
-           <nav>
-    <div class="logo">Janir Thorndike</div>
-    
-    <!-- Hamburger button (only shows on mobile) -->
-    <button class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+<div class="bg-mesh" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="bg-grain" aria-hidden="true"></div>
+<div class="bg-dots" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="brand-mark">JT</span>Janir Thorndike</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
-    
-    <!-- Navigation menu -->
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cta" href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J/export?format=pdf" target="_blank" rel="noopener">Resume</a></li>
     </ul>
+  </div>
 </nav>
-        </div>
-    </header>
- 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Janir Thorndike</h1>
-                <p class="hero-subtitle">Creative Problem Solver</p>
-                <p style="color: #94a3b8; font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
-                    I use AI to create functional and user-centered digital experiences that solve real-world problems. 
-                
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J/export?format=pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- About Section -->
-    <section class="about fade-in" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                       I'm a hybrid strategist-operator with 15+ years in B2B SaaS. I now run Maximo LLC, building AI advisory practices for non-tech mid-size companies. I'm strongest at diagnostic work, strategy synthesis, and translating complex technical possibilities into business value. I ship working prototypes—not just decks.
-                    </p>
-                    <p>
-                        I prefer strategic and advisory work over operational execution. I build things in both digital spaces and the physical world.
-                    </p>
-                    <div class="skills" style="margin-top: 2rem;">
-                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">SAAS</span>
-                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Client Success</span>
-                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Automation</span>
-                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Web</span>
-                            <span style="background: rgba(6, 182, 212, 0.2); color: #06b6d4; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem;">AI Integration</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="profile-image">
-                    <img src="./profile.jpg" alt="Janir Thorndike" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
-                </div>
-            </div>
-        </div>
-    </section>
- 
-   <!-- Projects Section -->
-<section class="projects fade-in" id="projects">
-    <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>DoorBot</h3>
-                <p>Live AI lead-generation chatbot deployed on Ski Town Garage Doors. Built with Claude API, Val.town serverless functions, and Web3Forms. Supports multi-turn conversations, photo attachments via Claude Vision, and delivers structured lead emails to business inbox.</p>
-                <div class="project-links">
-                    <a href="https://skitowngaragedoors.com/" target="_blank">Live Site</a>
-                    <a href="https://val.town/" target="_blank">Built With</a>
-                </div>
-            </div>
- 
-            <div class="project-card">
-                <h3>CrapApp</h3>
-                <p>Scatological Humor-driven content monetization web app. Features include CrapMap (location finder), Flush & Tell (social posts with Supabase backend), Daily Dump Trivia, Code Brown Simulator, customizable poop avatar system with 20+ SVG variants, and integrated Crap Store with Amazon Associates products.</p>
-                <div class="project-links">
-                    <a href="https://thecrapapp.app" target="_blank">Live App</a>
-                    <a href="https://github.com/janirthorndike/thecrapapp" target="_blank">GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>Ski Town Garage Doors</h3>
-                <p>Full-service business website featuring AI-powered content, optimized Google Business Profile management, and integrated DoorBot lead-gen chatbot. Portfolio piece showcasing AI integration in local service businesses.</p>
-                <div class="project-links">
-                    <a href="https://skitowngaragedoors.com/" target="_blank">Website</a>
-                    <a href="https://share.google/Q4MezDs36ovZCBscM" target="_blank">Google Profile</a>
-                </div>
-            </div>
- 
-            <div class="project-card">
-                <h3>Center Connect</h3>
-                <p>Fullstack web application for shopping center operations. Enables seamless communication and content management between tenants and property management. Built with modern web technologies and database integration.</p>
-                <div class="project-links">
-                    <a href="https://app--center-connect-ba2f5e1c.base44.app/login?from_url=https://app--center-connect-ba2f5e1c.base44.app/&app_id=6881513a8df6877cba2f5e1c" target="_blank">Demo</a>
-                    <a href="https://github.com/janirthorndike/portfolio" target="_blank">GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>Resume</h3>
-                <p>15+ years of B2B SaaS experience. Director-level expertise in customer success, AI integration, and strategic consulting. Available for consulting engagements and advisory roles.</p>
-                <div class="project-links">
-                    <a href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J" target="_blank">Download</a>
-                    <a href="https://www.linkedin.com/in/janirthorndike/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
- 
-            <div class="project-card">
-                <h3>CONTACT</h3>
-                <p>Open to consulting, advisory work, and strategic engagements. Let's discuss how AI can transform your business.</p>
-                <div class="project-links">
-                    <a href="tel:+13035176565">303-517-6565</a>
-                    <a href="mailto:janirthorndike@gmail.com">Email</a>
-                </div>
-            </div>
-        </div>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-meta">
+        <span><i class="dot"></i>Open to my next client services role</span>
+        <span>La Crosse, WI</span>
+        <span>English / Español</span>
+      </div>
+      <h1>I lead client teams that keep accounts growing, and I <em>build the AI tools</em> that help.</h1>
+      <p class="lede">15+ years in client services and account management for B2B SaaS. I also own two local service businesses, where I built the websites, the search presence, and the AI intake that brings in the work.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">See the work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://docs.google.com/document/d/1Y_2vS9IlHbAaOFpX-a4KnY6YoCSMls5J/export?format=pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download resume</a>
+      </div>
     </div>
+    <div class="portrait">
+      <img src="profile.jpg" alt="Janir Thorndike" width="380" height="475">
+      <div class="portrait-tag"><strong>8.5 years</strong><span>leading client success at Placewise</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="stats" aria-label="Results">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat"><div class="num">118<small>%</small></div><p>Net revenue retention across a 600+ account SaaS portfolio</p></div>
+      <div class="stat"><div class="num">92<small>%+</small></div><p>Gross revenue retention, sustained year over year</p></div>
+      <div class="stat"><div class="num">200<small>%</small></div><p>ARR growth over eight years at Placewise Digital</p></div>
+      <div class="stat"><div class="num">#2</div><p>Google Maps ranking built from zero for Ski Town Garage Doors</p></div>
+    </div>
+  </div>
 </section>
- 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/janirthorndike" target="_blank" title="GitHub">🔧</a>
-                <a href="https://www.linkedin.com/in/janirthorndike/" target="_blank" title="LinkedIn">💼</a>
-                <a href="https://www.instagram.com/janirthorndike" target="_blank" title="Instagram">📷</a>
-                <a href="https://mail.google.com/mail/?view=cm&to=janirthorndike@gmail.com"  title="Email">✉️</a>
-            </div>
-            <p style="color: #64748b;">&copy; 2025 Janir Thorndike.</p>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">About</span>
+      <h2>Strategist and operator, in the same person.</h2>
+    </div>
+    <div class="about-copy reveal">
+      <p>I've spent my career on the client side of software: owning renewals and expansion, running onboarding and delivery, and translating what a product can do into results a customer cares about. At Placewise Digital I led a player-coach team across 600+ accounts and was promoted to Director of Delivery. I went on to run client services at a fintech company, then led the launch of 15 new websites for a retail shopping center client as an independent consultant.</p>
+      <p>I also <strong>build things</strong>. I co-founded Ski Town Garage Doors in Steamboat Springs and took it from no search presence to the top of the local map pack. In 2026 I started La Crosse Garage Doors, built its site and AI intake myself, and had it taking calls within a few months of arriving.</p>
+      <p>Running two service businesses has given me a client's-eye view of what marketing and software vendors promise and what actually moves the phone. I bring that view to every account I manage.</p>
+      <div class="chips">
+        <span class="chip">Customer success</span>
+        <span class="chip">Account management</span>
+        <span class="chip">Retention &amp; expansion</span>
+        <span class="chip">AI integration</span>
+        <span class="chip">Local SEO / GEO</span>
+        <span class="chip">Web launches</span>
+        <span class="chip">GDPR, CCPA &amp; ADA compliance</span>
+        <span class="chip">Bilingual</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Things I've built and run</h2>
+      <p>Live projects with real customers and real phone calls behind them.</p>
+    </div>
+
+    <article class="feature reveal">
+      <div class="feature-img">
+        <img src="https://lacrossegaragedoors.com/images/la-crosse-garage-door-repair.jpg" alt="Steel garage door serviced by La Crosse Garage Doors" loading="lazy">
+      </div>
+      <div class="feature-body">
+        <span class="badge">New · Launched 2026</span>
+        <h3>La Crosse Garage Doors</h3>
+        <p>A repair-first garage door company I founded after moving to Wisconsin. I designed the business model, formed the LLC, and built the entire digital front end so the company could start taking calls the week it opened.</p>
+        <ul class="ticks">
+          <li>Multi-page site written to answer real search and AI-assistant questions, with full LocalBusiness and FAQ schema</li>
+          <li>DoorBot intake on the homepage, routing repair and install leads differently</li>
+          <li>Google Business Profile, local ads, and click-to-call/text on a local 608 number</li>
+          <li>Hosted on Netlify from GitHub, with Cloudflare DNS and Web3Forms lead capture</li>
+        </ul>
+        <div class="links">
+          <a href="https://lacrossegaragedoors.com/" target="_blank" rel="noopener">Visit site →</a>
         </div>
-    </footer>
- 
-    <script>
-       
-    // Hamburger menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
- 
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
+      </div>
+    </article>
+
+    <div class="cards">
+      <article class="card reveal">
+        <span class="badge cool">AI · Live</span>
+        <h3>DoorBot</h3>
+        <p>An AI lead-qualification chatbot running on both garage door sites. It holds a natural conversation, reads photos of a broken door, sorts the job by type and urgency, and sends a structured lead to the owner's inbox.</p>
+        <div class="stack">Claude API · Claude Vision · Val.town serverless · Web3Forms</div>
+        <div class="result">Takes leads <b>around the clock</b>, so after-hours visitors still become booked jobs.</div>
+        <div class="links">
+          <a href="https://www.loom.com/share/e33b96a825e94d5ba75c33637b90e0d2" target="_blank" rel="noopener">Watch demo →</a>
+          <a href="https://skitowngaragedoors.com/" target="_blank" rel="noopener">Try it live →</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <span class="badge cool">Local SEO · GEO</span>
+        <h3>Ski Town Garage Doors</h3>
+        <p>The Steamboat Springs business I co-founded and ran on the digital side. I built the website, Google Business Profile, and schema markup, then ran a full search and AI-visibility audit on the market.</p>
+        <div class="stack">Website · GBP · JSON-LD schema · Competitive SERP analysis</div>
+        <div class="result"><b>#2</b> in Google Maps and <b>#2</b> organic for "garage door repair Steamboat Springs." Grew to <b>$30K+</b> monthly gross.</div>
+        <div class="links">
+          <a href="https://skitowngaragedoors.com/" target="_blank" rel="noopener">Visit site →</a>
+          <a href="https://share.google/Q4MezDs36ovZCBscM" target="_blank" rel="noopener">Google profile →</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <span class="badge cool">Side project</span>
+        <h3>The Crap App</h3>
+        <p>A humor-driven web app I built for fun and to test monetization ideas. It has a restroom finder, a social feed, daily trivia, a custom avatar builder with 20+ SVG variants, and an affiliate storefront.</p>
+        <div class="stack">JavaScript · Supabase · SVG · Amazon Associates</div>
+        <div class="result">Full product built end to end: <b>design, backend, content, and revenue model</b>.</div>
+        <div class="links">
+          <a href="https://thecrapapp.app" target="_blank" rel="noopener">Open app →</a>
+          <a href="https://github.com/janirthorndike/thecrapapp" target="_blank" rel="noopener">GitHub →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've done the work</h2>
+    </div>
+    <div class="timeline">
+      <div class="role reveal">
+        <div class="role-when">2026 – present</div>
+        <div>
+          <h3>Founder</h3>
+          <div class="org">La Crosse Garage Doors · La Crosse, WI</div>
+          <p>Started and launched a garage door repair company, including business model, LLC formation, website, search presence, paid local ads, and AI-assisted lead intake.</p>
+        </div>
+      </div>
+      <div class="role reveal">
+        <div class="role-when">Feb 2024 – present</div>
+        <div>
+          <h3>Co-Founder &amp; Partner</h3>
+          <div class="org">Ski Town Garage Doors · Steamboat Springs, CO</div>
+          <p>Built the business side of a local garage door company from scratch while my partner ran the field. Grew it from $2K to $30K+ in monthly revenue and a top-two local search position.</p>
+        </div>
+      </div>
+      <div class="role reveal">
+        <div class="role-when">Sept 2023 – Oct 2025</div>
+        <div>
+          <h3>Digital Consultant</h3>
+          <div class="org">Maximo LLC</div>
+          <p>Led the launch of 15 new websites for a retail shopping center client in partnership with Placewise, improving campaign performance by 18% and cutting launch time by 16%.</p>
+        </div>
+      </div>
+      <div class="role reveal">
+        <div class="role-when">Aug 2022 – Jun 2023</div>
+        <div>
+          <h3>Director of Client Services</h3>
+          <div class="org">DigitalPay</div>
+          <p>Owned client delivery for $85M in payment processing volume and drove $450K in expansion revenue.</p>
+        </div>
+      </div>
+      <div class="role reveal">
+        <div class="role-when">Mar 2014 – Jul 2022</div>
+        <div>
+          <h3>Director of Client Services → Director of Delivery</h3>
+          <div class="org">Placewise Digital</div>
+          <p>Led a 10-person team and a 600+ account portfolio as a player-coach, delivering 118% NRR, 92%+ GRR, and ARR growth from $2.5M to $7.5M. Worked with developers to launch 300+ sites and integrations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Let's talk.</h2>
+        <p>I'm looking for my next role in client services, account management, or AI enablement. I'm also glad to compare notes with anyone working on AI for service businesses.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a href="mailto:janirthorndike@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span><small>Email</small>janirthorndike@gmail.com</span></a></li>
+        <li><a href="tel:+13035176565">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span><small>Phone</small>303-517-6565</span></a></li>
+        <li><a href="https://www.linkedin.com/in/janirthorndike/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span><small>LinkedIn</small>in/janirthorndike</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Janir Thorndike · La Crosse, Wisconsin</span>
+    <span>
+      <a href="https://github.com/janirthorndike" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/janirthorndike/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/janirthorndike" target="_blank" rel="noopener">Instagram</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    var btn = document.getElementById('menuBtn');
+    var links = document.getElementById('navLinks');
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+    btn.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
- 
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); });
     });
- 
-    
-  // Sticky navigation
- window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    const heroHeight = document.querySelector('.hero').offsetHeight;
-    
-    console.log('Scroll position:', window.scrollY);
-    console.log('Hero height:', heroHeight);
-    console.log('30% of hero:', heroHeight * 0.3);
-    
-    if (window.scrollY > heroHeight * 0.3) {
-        console.log('Adding scrolled class');
-        header.classList.add('scrolled');
-    } else {
-        console.log('Removing scrolled class');
-        header.classList.remove('scrolled');
-    }
-});
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
- 
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
- 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
- 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
- 
-        // Add hover effects to project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(-5px) scale(1)';
-            });
-        });
- 
-        // Dynamic typing effect for hero subtitle
-        const subtitle = document.querySelector('.hero-subtitle');
-        const text = subtitle.textContent;
-        subtitle.textContent = '';
-        
-        setTimeout(() => {
-            let i = 0;
-            const typeWriter = () => {
-                if (i < text.length) {
-                    subtitle.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 50);
-                }
-            };
-            typeWriter();
-        }, 1000);
-    </script>
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
 </body>
- 
 </html>
- 
-Last refreshed just nowLast refreshed just now
